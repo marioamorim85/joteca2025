@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JoTecA 2025 | Comissão Científica</title>
+        <meta name="description" content="Comissão Científica do JoTecA 2025 - Jornadas de Tecnologia Avançada">
+        
+        <!-- Favicon -->
+        <link rel="icon" type="image/png" href="assets/img/Ativo 1@4x_2.PNG">
+        
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+        
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        
+        <!-- Three.js -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+        
+        <!-- Particles.js -->
+        <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+        
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="assets/css/styles.css">
+        <link rel="stylesheet" href="assets/css/chat.css">
+    </head>
+<body class="comissao-page">
+    <div id="particles-js"></div>
+    <div id="three-js"></div>
+    
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <a href="index.html" class="logo">
+                <img src="assets/img/Ativo 1@4x.png" alt="JoTecA 2025 Logo">
+            </a>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html#sobre" data-translate="nav.sobre">Sobre</a></li>
+                    <li><a href="index.html#areas" data-translate="nav.areas">Áreas</a></li>
+                    <li><a href="index.html#destaques" data-translate="nav.destaques">Destaques</a></li>
+                    <li><a href="index.html#datas" data-translate="nav.datas">Datas</a></li>
+                    <li><a href="index.html#submissoes" data-translate="nav.submissoes">Submissão</a></li>
+                    <li><a href="index.html#contacto" data-translate="nav.contacto">Contacto</a></li>
+                </ul>
+            </nav>
+            <button class="btn-language" id="languageToggle">
+                <i class="fas fa-globe"></i> <span>PT</span>
+            </button>
+            <button class="mobile-menu-btn" id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Comissão Section -->
+    <section class="comissao-section">
+        <div class="container">
+            <div class="section-title">
+                <h2 data-translate="comissao.title">Comissão Científica</h2>
+                <p data-translate="comissao.subtitle">Conheça a equipa que avalia e seleciona os trabalhos</p>
+            </div>
+
+            <div class="comissao-grid">
+                <!-- Comissão Científica -->
+                <div class="comissao-card">
+                    <div class="comissao-header">
+                        <i class="fas fa-users"></i>
+                        <h3 data-translate="comissao.title">Comissão Científica</h3>
+                    </div>
+                    <div class="comissao-body">
+                        <div class="membros-grid">
+                            <ul class="membros-list">
+                                <li>
+                                    <div class="membro-info">
+                                        <h4>Dr.ª Ana Azevedo</h4>
+                                        <p>ISTEC</p>
+                                        <a href="mailto:ana.azevedo@my.istec.pt">
+                                            <i class="fas fa-envelope"></i>
+                                            ana.azevedo@my.istec.pt
+                                        </a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="membro-info">
+                                        <h4>Dr.º Gonçalo Medeiros</h4>
+                                        <p>ISTEC</p>
+                                        <a href="mailto:goncalo.medeiros@my.istec.pt">
+                                            <i class="fas fa-envelope"></i>
+                                            goncalo.medeiros@my.istec.pt
+                                        </a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="membro-info">
+                                        <h4>Dr.º Helder Pinto</h4>
+                                        <p>ISTEC</p>
+                                        <a href="mailto:helder.pinto@my.istec.pt">
+                                            <i class="fas fa-envelope"></i>
+                                            helder.pinto@my.istec.pt
+                                        </a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="membro-info">
+                                        <h4>Dr.ª Isabel Fidalgo</h4>
+                                        <p>ISTEC</p>
+                                        <a href="mailto:isabel.fidalgo@my.istec.pt">
+                                            <i class="fas fa-envelope"></i>
+                                            isabel.fidalgo@my.istec.pt
+                                        </a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="membro-info">
+                                        <h4>Especialista João Rebelo</h4>
+                                        <p>ISTEC</p>
+                                        <a href="mailto:jrebelo@my.istec.pt">
+                                            <i class="fas fa-envelope"></i>
+                                            jrebelo@my.istec.pt
+                                        </a>
+                                    </div>
+                                </li>
+                            </ul>
+                            <ul class="membros-list">
+                                <li>
+                                    <div class="membro-info">
+                                        <h4>Dr.º Zafeiris Kokkinogenis</h4>
+                                        <p>ISTEC</p>
+                                        <a href="mailto:zafeiris@my.istec.pt">
+                                            <i class="fas fa-envelope"></i>
+                                            zafeiris@my.istec.pt
+                                        </a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="membro-info">
+                                        <h4>Dr.ª Luísa Orvalho</h4>
+                                        <p>ISTEC</p>
+                                        <a href="mailto:luisa.orvalho@my.istec.pt">
+                                            <i class="fas fa-envelope"></i>
+                                            luisa.orvalho@my.istec.pt
+                                        </a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="membro-info">
+                                        <h4>Dr.º Ricardo Queirós</h4>
+                                        <p>ISTEC</p>
+                                        <a href="mailto:ricardo.queiros@my.istec.pt">
+                                            <i class="fas fa-envelope"></i>
+                                            ricardo.queiros@my.istec.pt
+                                        </a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="membro-info">
+                                        <h4>Dr.ª Márcia Barreto</h4>
+                                        <p>ISTEC</p>
+                                        <a href="mailto:marcia.barreto@my.istec.pt">
+                                            <i class="fas fa-envelope"></i>
+                                            marcia.barreto@my.istec.pt
+                                        </a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="membro-info">
+                                        <h4>Dr.ª Natércia Menezes</h4>
+                                        <p>ISTEC</p>
+                                        <a href="mailto:natercia.meneses@my.istec.pt">
+                                            <i class="fas fa-envelope"></i>
+                                            natercia.meneses@my.istec.pt
+                                        </a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-title" style="margin-top: 60px;">
+                <h2 data-translate="comissao.equipa.title">Equipa de Organização</h2>
+                <p data-translate="comissao.equipa.subtitle">Conheça a equipa que está a organizar o JoTecA 2025</p>
+            </div>
+
+            <div class="comissao-grid">
+                <!-- Equipa de Organização -->
+                <div class="comissao-card">
+                    <div class="comissao-header">
+                        <i class="fas fa-sitemap"></i>
+                        <h3 data-translate="comissao.equipa.title">Equipa de Organização</h3>
+                    </div>
+                    <div class="comissao-body">
+                        <div class="membros-grid">
+                            <div class="equipa-column">
+                                <!-- Coordenação Geral -->
+                                <div class="equipa-section">
+                                    <h4 class="equipa-title" data-translate="comissao.equipa.coordenacao">Coordenação Geral</h4>
+                                    <ul class="membros-list">
+                                        <li>
+                                            <div class="membro-info">
+                                                <h4>Dr.º Helder Pinto</h4>
+                                                <p>ISTEC</p>
+                                                <a href="mailto:helder.pinto@my.istec.pt"><i class="fas fa-envelope"></i> helder.pinto@my.istec.pt</a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="membro-info">
+                                                <h4>Dr.º Leonardo Duarte</h4>
+                                                <p>ISTEC</p>
+                                                <a href="mailto:leonardo.duarte@my.istec.pt"><i class="fas fa-envelope"></i> leonardo.duarte@my.istec.pt</a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="membro-info">
+                                                <h4>Estudante Gonçalo Marques</h4>
+                                                <p>ISTEC</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <!-- Relações Públicas e Parcerias -->
+                                <div class="equipa-section">
+                                    <h4 class="equipa-title" data-translate="comissao.equipa.relacoes">Relações Públicas e Parcerias</h4>
+                                    <ul class="membros-list">
+                                        <li>
+                                            <div class="membro-info">
+                                                <h4>Dr.ª Ana Azevedo</h4>
+                                                <p>ISTEC</p>
+                                                <a href="mailto:ana.azevedo@my.istec.pt">
+                                                    <i class="fas fa-envelope"></i>
+                                                    ana.azevedo@my.istec.pt
+                                                </a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="membro-info">
+                                                <h4>Dr.ª Joana Macedo</h4>
+                                                <p>ISTEC</p>
+                                                <a href="mailto:joana.macedo@my.istec.pt"><i class="fas fa-envelope"></i> joana.macedo@my.istec.pt</a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="membro-info">
+                                                <h4>Estudante Beatriz Lameiras</h4>
+                                                <p>ISTEC</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="membro-info">
+                                                <h4>Estudante Mário Vilares</h4>
+                                                <p>ISTEC</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="membro-info">
+                                                <h4>Estudante Martim Soares</h4>
+                                                <p>ISTEC</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <!-- Desenvolvimento Web -->
+                                <div class="equipa-section">
+                                    <h4 class="equipa-title" data-translate="comissao.equipa.web">Desenvolvimento Web</h4>
+                                    <ul class="membros-list">
+                                        <li>
+                                            <div class="membro-info">
+                                                <h4>Dr.º Mário Amorim</h4>
+                                                <p>ISTEC</p>
+                                                <a href="mailto:mario.amorim@my.istec.pt">
+                                                    <i class="fas fa-envelope"></i>
+                                                    mario.amorim@my.istec.pt
+                                                </a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="membro-info">
+                                                <h4>Estudante Pedro Sousa</h4>
+                                                <p>ISTEC</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <!-- Desenvolvimento Mobile -->
+                                <div class="equipa-section">
+                                    <h4 class="equipa-title" data-translate="equipa.mobile">Desenvolvimento Mobile</h4>
+                                    <ul class="membros-list">
+                                        <li>
+                                            <div class="membro-info">
+                                                <h4>Dr.º Vítor Santos</h4>
+                                                <p>ISTEC</p>
+                                                <a href="mailto:vmvs007@gmail.com"><i class="fas fa-envelope"></i> vmvs007@gmail.com</a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="membro-info">
+                                                <h4>Estudante Lucas Silva</h4>
+                                                <p>ISTEC</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <!-- Gestão de Riscos -->
+                                <div class="equipa-section">
+                                    <h4 class="equipa-title" data-translate="equipa.risks">Gestão de Riscos</h4>
+                                    <ul class="membros-list">
+                                        <li>
+                                            <div class="membro-info">
+                                                <h4>Especialista Paula Serra</h4>
+                                                <p>ISTEC</p>
+                                                <a href="mailto:paula.serra@my.istec.pt"><i class="fas fa-envelope"></i> paula.serra@my.istec.pt</a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="membro-info">
+                                                <h4>Estudante David Mota</h4>
+                                                <p>ISTEC</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="membro-info">
+                                                <h4>Estudante Helder Ferreira</h4>
+                                                <p>ISTEC</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <!-- Serviços Técnicos -->
+                                <div class="equipa-section">
+                                    <h4 class="equipa-title" data-translate="equipa.technical">Serviços Técnicos</h4>
+                                    <ul class="membros-list">
+                                        <li>
+                                            <div class="membro-info">
+                                                <h4>Dr.º Tiago Teixeira</h4>
+                                                <p>ISTEC</p>
+                                                <a href="mailto:tiago.teixeira@my.istec.pt"><i class="fas fa-envelope"></i> tiago.teixeira@my.istec.pt</a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="membro-info">
+                                                <h4>Estudante Leandro Rodrigues</h4>
+                                                <p>ISTEC</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="membro-info">
+                                                <h4>Estudante Rodrigo Silva</h4>
+                                                <p>ISTEC</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="equipa-column">
+                                <!-- Design e Criatividade -->
+                                <div class="equipa-section">
+                                    <h4 class="equipa-title" data-translate="equipa.design">Design e Criatividade</h4>
+                                    <ul class="membros-list">
+                                        <li>
+                                            <div class="membro-info">
+                                                <h4>Dr.ª Isabel Madalena</h4>
+                                                <p>ISTEC</p>
+                                                <a href="mailto:isabel.madalena@my.istec.pt"><i class="fas fa-envelope"></i> isabel.madalena@my.istec.pt</a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="membro-info">
+                                                <h4>Estudante Nuno Ribeiro</h4>
+                                                <p>ISTEC</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <!-- Gestão Financeira -->
+                                <div class="equipa-section">
+                                    <h4 class="equipa-title" data-translate="equipa.financial">Gestão Financeira</h4>
+                                    <ul class="membros-list">
+                                        <li>
+                                            <div class="membro-info">
+                                                <h4>Estudante Gabriel Pinto</h4>
+                                                <p>ISTEC</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <!-- Fotografia -->
+                                <div class="equipa-section">
+                                    <h4 class="equipa-title" data-translate="equipa.photography">Fotografia</h4>
+                                    <ul class="membros-list">
+                                        <li>
+                                            <div class="membro-info">
+                                                <h4>Dr.ª Elisa Simões</h4>
+                                                <p>ISTEC</p>
+                                                <a href="mailto:elisa.simoes@my.istec.pt"><i class="fas fa-envelope"></i> elisa.simoes@my.istec.pt</a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="membro-info">
+                                                <h4>Estudante Rodrigo Ferreira</h4>
+                                                <p>ISTEC</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <!-- Vídeo -->
+                                <div class="equipa-section">
+                                    <h4 class="equipa-title" data-translate="equipa.video">Vídeo</h4>
+                                    <ul class="membros-list">
+                                        <li>
+                                            <div class="membro-info">
+                                                <h4>Dr.º Flávio Pires</h4>
+                                                <p>ISTEC</p>
+                                                <a href="mailto:flavio.m.pires@my.istec.pt"><i class="fas fa-envelope"></i> flavio.m.pires@my.istec.pt</a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="membro-info">
+                                                <h4>Estudante Carlos Saraiva</h4>
+                                                <p>ISTEC</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <!-- Avaliação e Feedback -->
+                                <div class="equipa-section">
+                                    <h4 class="equipa-title" data-translate="equipa.evaluation">Avaliação e Feedback</h4>
+                                    <ul class="membros-list">
+                                        <li>
+                                            <div class="membro-info">
+                                                <h4>Dr.ª Isabel Fidalgo</h4>
+                                                <p>ISTEC</p>
+                                                <a href="mailto:isabel.fidalgo@my.istec.pt"><i class="fas fa-envelope"></i> isabel.fidalgo@my.istec.pt</a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="membro-info">
+                                                <h4>Estudante Alexandre Santos</h4>
+                                                <p>ISTEC</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="membro-info">
+                                                <h4>Estudante Zhongyang Lin</h4>
+                                                <p>ISTEC</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <!-- Atividades e Competição -->
+                                <div class="equipa-section">
+                                    <h4 class="equipa-title" data-translate="equipa.activities">Atividades e Competição</h4>
+                                    <ul class="membros-list">
+                                        <li>
+                                            <div class="membro-info">
+                                                <h4>Dr.º Flávio Vaz</h4>
+                                                <p>ISTEC</p>
+                                                <a href="mailto:flavio.vaz@my.istec.pt"><i class="fas fa-envelope"></i> flavio.vaz@my.istec.pt</a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="membro-info">
+                                                <h4>Estudante Ângelo Sousa</h4>
+                                                <p>ISTEC</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="membro-info">
+                                                <h4>Estudante Diogo Teixeira</h4>
+                                                <p>ISTEC</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="membro-info">
+                                                <h4>Estudante Gonçalo Valente</h4>
+                                                <p>ISTEC</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="membro-info">
+                                                <h4>Estudante Martim Soares</h4>
+                                                <p>ISTEC</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="membro-info">
+                                                <h4>Estudante Rafael Matias</h4>
+                                                <p>ISTEC</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contacto">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3 data-translate="footer.title">JoTecA 2025</h3>
+                    <p data-translate="footer.subtitle">Jornadas de Tecnologia Avançada</p>
+                    <p data-translate="footer.motto">"Conectar, automatizar e proteger o futuro inteligente em movimento"</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/istec.porto/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.linkedin.com/school/istecp/?originalSubdomain=pt" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.instagram.com/istec.porto/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h3 data-translate="footer.quickLinks">Links Rápidos</h3>
+                    <ul>
+                        <li><a href="index.html"><i class="fas fa-chevron-right"></i> <span data-translate="footer.home">Início</span></a></li>
+                        <li><a href="index.html#sobre"><i class="fas fa-chevron-right"></i> <span data-translate="nav.sobre">Sobre</span></a></li>
+                        <li><a href="index.html#areas"><i class="fas fa-chevron-right"></i> <span data-translate="nav.areas">Áreas</span></a></li>
+                        <li><a href="index.html#destaques"><i class="fas fa-chevron-right"></i> <span data-translate="nav.destaques">Destaques</span></a></li>
+                        <li><a href="index.html#datas"><i class="fas fa-chevron-right"></i> <span data-translate="nav.datas">Datas</span></a></li>
+                        <li><a href="index.html#submissoes"><i class="fas fa-chevron-right"></i> <span data-translate="nav.submissoes">Submissão</span></a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3 data-translate="footer.contacts">Contactos</h3>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span><a href="mailto:jornadas@my.isetc.pt">jornadas@my.isetc.pt</a></span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>225 193 220</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>ISTEC - Instituto Superior de Tecnologias Avançadas do Porto<br>Rua de Silva Tapada 115, 4200-501 Porto</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p data-translate="footer.copyright">© 2025 JoTecA - Jornadas de Tecnologia Avançada. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Scripts -->
+    <script src="assets/js/translations.js"></script>
+    <script src="assets/js/scripts.js"></script>
+    <script src="assets/js/chat.js"></script>
+
+    <!-- Chat Widget -->
+    <button id="chat-toggle"><i class="fas fa-comment-dots"></i></button>
+    <div id="chat-container">
+        <div id="chat-header">
+            <span data-translate="chat.title">Tecas – Assistente JoTecA</span>
+            <button id="chat-close"><i class="fas fa-times"></i></button>
+        </div>
+        <div id="chat-messages"></div>
+        <input id="chat-input" data-translate="chat.placeholder" placeholder="Escreve a tua mensagem..." />
+    </div>
+</body>
+</html> 

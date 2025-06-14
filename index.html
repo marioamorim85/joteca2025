@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-translate="title">JoTecA 2025</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/img/Ativo 1@4x_2.PNG">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    
+    <!-- Three.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    
+    <!-- Particles.js -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/chat.css">
+</head>
+<body>
+    <div id="topo"></div>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <a href="#" class="logo">
+                <img src="assets/img/Ativo 1@4x.png" alt="JoTecA 2025 Logo">
+            </a>
+            
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#sobre" data-translate="nav.sobre">Sobre</a></li>
+                    <li><a href="#areas" data-translate="nav.areas">Áreas</a></li>
+                    <li><a href="#destaques" data-translate="nav.destaques">Destaques</a></li>
+                    <li><a href="#datas" data-translate="nav.datas">Datas</a></li>
+                    <li><a href="#submissoes" data-translate="nav.submissoes">Submissão</a></li>
+                    <li><a href="#contacto" data-translate="nav.contacto">Contacto</a></li>
+                </ul>
+            </nav>
+            
+            <button class="btn-language" id="languageToggle">
+                <i class="fas fa-globe"></i> <span>PT</span>
+            </button>
+            
+            <button class="mobile-menu-btn" id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+    
+    <!-- Hero Section -->
+    <section class="hero">
+        <div id="particles-js"></div>
+        <div id="three-js"></div>
+        
+        <div class="animation-dots">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+        </div>
+        
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <span class="hero-subtitle" data-translate="hero.subtitle">Jornadas de Tecnologia Avançada</span>
+                    <div class="hero-title-container">
+                        <img src="assets/img/Ativo 1@4x.png" alt="JoTecA Logo" class="hero-logo">
+                        <span class="hero-year">2025</span>
+                    </div>
+                    <div class="hero-istec">
+                        <span class="istec-name">ISTEC - Instituto Superior de Tecnologias Avançadas do Porto</span>
+                    </div>
+                    <div class="hero-date">
+                        <i class="fas fa-calendar-alt"></i> <span data-translate="hero.date">1 de Julho de 2025</span>
+                    </div>
+                    <p class="hero-description" data-translate="hero.description">Conectar, automatizar e proteger o futuro inteligente em movimento</p>
+                    
+                    <div class="countdown-section">
+                        <div class="countdown-container">
+                            <h2 class="countdown-title" data-translate="hero.countdownTitle">O evento começa em</h2>
+                            
+                            <div class="countdown">
+                                <div class="countdown-item">
+                                    <div class="countdown-value" id="days">359</div>
+                                    <div class="countdown-label" data-translate="hero.days">Dias</div>
+                                </div>
+                                
+                                <div class="countdown-item">
+                                    <div class="countdown-value" id="hours">23</div>
+                                    <div class="countdown-label" data-translate="hero.hours">Horas</div>
+                                </div>
+                                
+                                <div class="countdown-item">
+                                    <div class="countdown-value" id="minutes">59</div>
+                                    <div class="countdown-label" data-translate="hero.minutes">Minutos</div>
+                                </div>
+                                
+                                <div class="countdown-item">
+                                    <div class="countdown-value" id="seconds">48</div>
+                                    <div class="countdown-label" data-translate="hero.seconds">Segundos</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="hero-buttons">
+                        <a href="https://forms.gle/2Qn1ytY1qXK2vNhA7" class="btn btn-primary">
+                            <i class="fas fa-user-plus"></i>
+                            <span data-translate="hero.buttonRegister">Inscrever-me</span>
+                        </a>
+                        <a href="programa.html" class="btn btn-outline">
+                            <i class="fas fa-calendar-alt"></i>
+                            <span data-translate="hero.buttonProgram">Ver Programa</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="scroll-indicator" onclick="document.querySelector('#sobre').scrollIntoView({behavior: 'smooth'})">
+            <i class="fas fa-chevron-down"></i>
+            <span data-translate="hero.scrollDown">Ver mais</span>
+        </div>
+    </section>
+    
+    <!-- About Section -->
+    <section class="about-section" id="sobre">
+        <div class="container">
+            <div class="section-title fade-in">
+                <h2 data-translate="about.title">Sobre o Evento</h2>
+                <p data-translate="about.subtitle">O JoTecA reune mentes académicas, investigadores e empresas num ambiente de colaboração e partilha de conhecimento em áreas cruciais como Inteligência Artificial, Robótica e Cibersegurança. Incentiva a apresentação de projetos de investigação e o desenvolvimento de novas soluções, facilitando o contacto entre estudantes, profissionais e o mundo empresarial. O evento oferece ainda oportunidades de estágios e parcerias, impulsionando o avanço tecnológico e na preparação dos participantes para os desafios do futuro.</p>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-card fade-in">
+                    <div class="about-icon">
+                        <i class="fas fa-flask"></i>
+                    </div>
+                    <h3 data-translate="about.investigation.title">Investigação</h3>
+                    <p data-translate="about.investigation.description">O JoTecA 2025 incentiva a apresentação de projetos de investigação, aproximando o mundo académico e empresarial na busca por soluções inovadoras.</p>
+                </div>
+                
+                <div class="about-card fade-in">
+                    <div class="about-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3 data-translate="about.innovation.title">Inovação</h3>
+                    <p data-translate="about.innovation.description">Promovemos soluções tecnológicas em áreas cruciais como Inteligência Artificial, Robótica e Cibersegurança para enfrentar os desafios do futuro.</p>
+                </div>
+                
+                <div class="about-card fade-in">
+                    <div class="about-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3 data-translate="about.networking.title">Networking</h3>
+                    <p data-translate="about.networking.description">O JoTecA oferece oportunidades para estágios, parcerias e networking, aproximando estudantes, profissionais e empresas num ambiente colaborativo.</p>
+                </div>
+            </div>
+            
+            <p class="about-team-ref fade-in" style="margin-top:2rem; text-align:center;">
+              <span data-translate="about.team.ref">O JoTecA 2025 é organizado por uma equipa multidisciplinar de estudantes, docentes e especialistas do ISTEC Porto, contando também com uma Comissão Científica dedicada à avaliação e seleção dos trabalhos.</span><br>
+              <a href="comissao.html" class="btn btn-primary" style="margin-top: 1.2rem; display:inline-block;" data-translate="about.team.button">Conhece a Equipa</a>
+            </p>
+        </div>
+    </section>
+    
+    <!-- Areas Section -->
+    <section class="areas-section" id="areas">
+        <div class="container">
+            <div class="section-title fade-in">
+                <h2 data-translate="areas.title">Áreas Temáticas</h2>
+                <p data-translate="areas.subtitle">Explora as áreas de conhecimento e inovação abordadas no JoTecA 2025</p>
+            </div>
+            
+            <div class="areas-grid">
+                <div class="area-card slide-in-left">
+                    <div class="area-card-header">
+                        <div class="area-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <h3 data-translate="areas.ai.title">Inteligência Artificial</h3>
+                    </div>
+                    <div class="area-card-body">
+                        <p data-translate="areas.ai.description">Apresentação de projetos e discussões sobre os avanços em IA e o seu impacto nos diversos sectores.</p>
+                        <a href="#" class="area-link"><span data-translate="areas.ai.more">Saber mais</span> <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <div class="area-card scale-in">
+                    <div class="area-card-header">
+                        <div class="area-icon">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <h3 data-translate="areas.robotics.title">Robótica</h3>
+                    </div>
+                    <div class="area-card-body">
+                        <p data-translate="areas.robotics.description">Demonstração de projetos da área de robótica e automação inteligente.</p>
+                        <a href="#" class="area-link"><span data-translate="areas.robotics.more">Saber mais</span> <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <div class="area-card slide-in-right">
+                    <div class="area-card-header">
+                        <div class="area-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3 data-translate="areas.cybersecurity.title">Cibersegurança</h3>
+                    </div>
+                    <div class="area-card-body">
+                        <p data-translate="areas.cybersecurity.description">Exploração dos desafios e soluções para proteger os sistemas e dados no mundo digital.</p>
+                        <a href="#" class="area-link"><span data-translate="areas.cybersecurity.more">Saber mais</span> <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Highlights Section -->
+    <section class="highlights-section" id="destaques">
+        <div class="container">
+            <div class="section-title fade-in">
+                <h2 data-translate="highlights.title">Destaques</h2>
+                <p data-translate="highlights.subtitle">Conheça as palestras e workshops do JoTecA 2025</p>
+            </div>
+            
+            <div class="swiper highlights-slider">
+                <div class="swiper-wrapper">
+                    <!-- Metodologias Ágeis -->
+                    <div class="swiper-slide">
+                        <div class="highlight-card scale-in">
+                            <div class="highlight-image">
+                                <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=1000" alt="Metodologias Ágeis">
+                            </div>
+                            <div class="highlight-content">
+                                <h3 data-translate="highlights.agile.title">Metodologias Ágeis para Desenvolvimento de Software</h3>
+                                <div class="highlight-info">
+                                    <div><i class="fas fa-user"></i> <span data-translate="highlights.agile.speakers">António Tojal (Blip), Ana Azevedo (ISTEC)</span></div>
+                                    <div><i class="fas fa-calendar"></i> <span data-translate="highlights.date">1 de Julho</span></div>
+                                    <div><i class="fas fa-clock"></i> <span data-translate="highlights.agile.time">15:15</span></div>
+                                    <div><i class="fas fa-map-marker-alt"></i> <span data-translate="highlights.agile.room">Sala 7</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Inovações Tecnológicas na Saúde -->
+                    <div class="swiper-slide">
+                        <div class="highlight-card scale-in">
+                            <div class="highlight-image">
+                                <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?q=80&w=1000" alt="Inovações Tecnológicas na Saúde">
+                            </div>
+                            <div class="highlight-content">
+                                <h3 data-translate="highlights.health.title">Inovações Tecnológicas na Saúde</h3>
+                                <div class="highlight-info">
+                                    <div><i class="fas fa-user"></i> <span data-translate="highlights.health.speakers">Rita Sousa (Sword Health), Diana Cardoso (FEUP), Ricardo Freixo (Prológica - Glintt), Jaime Peralta (MECEI)</span></div>
+                                    <div><i class="fas fa-calendar"></i> <span data-translate="highlights.date">1 de Julho</span></div>
+                                    <div><i class="fas fa-clock"></i> <span data-translate="highlights.health.time">16:15</span></div>
+                                    <div><i class="fas fa-map-marker-alt"></i> <span data-translate="highlights.health.room">Sala 7</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Power Platform e LowCode -->
+                    <div class="swiper-slide">
+                        <div class="highlight-card scale-in">
+                            <div class="highlight-image">
+                                <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1000" alt="Power Platform e LowCode">
+                            </div>
+                            <div class="highlight-content">
+                                <h3 data-translate="highlights.power.title">Potencializar Soluções com Power Platform e LowCode</h3>
+                                <div class="highlight-info">
+                                    <div><i class="fas fa-user"></i> <span data-translate="highlights.power.speakers">Gonçalo Nogueira (ISTEC), Ricardo Calejo (Microsoft)</span></div>
+                                    <div><i class="fas fa-calendar"></i> <span data-translate="highlights.date">1 de Julho</span></div>
+                                    <div><i class="fas fa-clock"></i> <span data-translate="highlights.power.time">16:15</span></div>
+                                    <div><i class="fas fa-map-marker-alt"></i> <span data-translate="highlights.power.room">Sala 6</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Workshop IA -->
+                    <div class="swiper-slide">
+                        <div class="highlight-card scale-in">
+                            <div class="highlight-image">
+                                <img src="https://images.unsplash.com/photo-1526378722484-bd91ca387e72?q=80&w=1000" alt="Oficina IA">
+                            </div>
+                            <div class="highlight-content">
+                                <h3 data-translate="highlights.ai.title">Think. Sync. Control. - Oficina de Inteligência Artificial</h3>
+                                <div class="highlight-info">
+                                    <div><i class="fas fa-user"></i> <span data-translate="highlights.ai.speakers">CTeSP RIA</span></div>
+                                    <div><i class="fas fa-calendar"></i> <span data-translate="highlights.date">1 de Julho</span></div>
+                                    <div><i class="fas fa-clock"></i> <span data-translate="highlights.ai.time">17:00</span></div>
+                                    <div><i class="fas fa-map-marker-alt"></i> <span data-translate="highlights.ai.room">Sala 8</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Workshop Automação -->
+                    <div class="swiper-slide">
+                        <div class="highlight-card scale-in">
+                            <div class="highlight-image">
+                                <img src="https://images.unsplash.com/photo-1558346490-a72e53ae2d4f?q=80&w=1000" alt="Oficina Automação">
+                            </div>
+                            <div class="highlight-content">
+                                <h3 data-translate="highlights.automation.title">Hey Casa! - Oficina de Automação</h3>
+                                <div class="highlight-info">
+                                    <div><i class="fas fa-user"></i> <span data-translate="highlights.automation.speakers">CTeSP RIA</span></div>
+                                    <div><i class="fas fa-calendar"></i> <span data-translate="highlights.date">1 de Julho</span></div>
+                                    <div><i class="fas fa-clock"></i> <span data-translate="highlights.automation.time">17:00</span></div>
+                                    <div><i class="fas fa-map-marker-alt"></i> <span data-translate="highlights.automation.room">Sala 9</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Profissões do Futuro -->
+                    <div class="swiper-slide">
+                        <div class="highlight-card scale-in">
+                            <div class="highlight-image">
+                                <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=1000" alt="Profissões do Futuro">
+                            </div>
+                            <div class="highlight-content">
+                                <h3 data-translate="highlights.future.title">Profissões do Futuro com a Inteligência Artificial</h3>
+                                <div class="highlight-info">
+                                    <div><i class="fas fa-user"></i> <span data-translate="highlights.future.speakers">Sérgio Nogueira (Critical Techworks), Helder Pinto (ISTEC)</span></div>
+                                    <div><i class="fas fa-calendar"></i> <span data-translate="highlights.date">1 de Julho</span></div>
+                                    <div><i class="fas fa-clock"></i> <span data-translate="highlights.future.time">18:30</span></div>
+                                    <div><i class="fas fa-map-marker-alt"></i> <span data-translate="highlights.future.room">Sala 7</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Cibercrime -->
+                    <div class="swiper-slide">
+                        <div class="highlight-card scale-in">
+                            <div class="highlight-image">
+                                <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=1000" alt="Cibercrime">
+                            </div>
+                            <div class="highlight-content">
+                                <h3 data-translate="highlights.cyber.title">Navegar no Labirinto do Cibercrime</h3>
+                                <div class="highlight-info">
+                                    <div><i class="fas fa-user"></i> <span data-translate="highlights.cyber.speakers">Nuno Oliveira (Fedex), Nuno Fonseca (ISEP), Gonçalo Leite (CESAE Digital)</span></div>
+                                    <div><i class="fas fa-calendar"></i> <span data-translate="highlights.date">1 de Julho</span></div>
+                                    <div><i class="fas fa-clock"></i> <span data-translate="highlights.cyber.time">19:00</span></div>
+                                    <div><i class="fas fa-map-marker-alt"></i> <span data-translate="highlights.cyber.room">Sala 7</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Transformação Digital -->
+                    <div class="swiper-slide">
+                        <div class="highlight-card scale-in">
+                            <div class="highlight-image">
+                                <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=1000" alt="Transformação Digital">
+                            </div>
+                            <div class="highlight-content">
+                                <h3 data-translate="highlights.digital.title">Transformação Digital</h3>
+                                <div class="highlight-info">
+                                    <div><i class="fas fa-user"></i> <span data-translate="highlights.digital.speakers">Ana Canavarro (IPAM), André Vala (Microsoft), Isabel Madalena (ISTEC), Ângelo Valente (Fedex)</span></div>
+                                    <div><i class="fas fa-calendar"></i> <span data-translate="highlights.date">1 de Julho</span></div>
+                                    <div><i class="fas fa-clock"></i> <span data-translate="highlights.digital.time">19:00</span></div>
+                                    <div><i class="fas fa-map-marker-alt"></i> <span data-translate="highlights.digital.room">Sala 6</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Workshop Cibersegurança -->
+                    <div class="swiper-slide">
+                        <div class="highlight-card scale-in">
+                            <div class="highlight-image">
+                                <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?q=80&w=1000" alt="Oficina Cibersegurança">
+                            </div>
+                            <div class="highlight-content">
+                                <h3 data-translate="highlights.cyberworkshop.title">CyberStrike: Oficina de Cibersegurança</h3>
+                                <div class="highlight-info">
+                                    <div><i class="fas fa-user"></i> <span data-translate="highlights.cyberworkshop.speakers">CTeSP RIA</span></div>
+                                    <div><i class="fas fa-calendar"></i> <span data-translate="highlights.date">1 de Julho</span></div>
+                                    <div><i class="fas fa-clock"></i> <span data-translate="highlights.cyberworkshop.time">20:15</span></div>
+                                    <div><i class="fas fa-map-marker-alt"></i> <span data-translate="highlights.cyberworkshop.room">Sala 8</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Workshop SmartTraffic -->
+                    <div class="swiper-slide">
+                        <div class="highlight-card scale-in">
+                            <div class="highlight-image">
+                                <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=1000" alt="SmartTraffic">
+                            </div>
+                            <div class="highlight-content">
+                                <h3 data-translate="highlights.smarttraffic.title">SmartTraffic - Oficina de Automação e Robótica</h3>
+                                <div class="highlight-info">
+                                    <div><i class="fas fa-user"></i> <span data-translate="highlights.smarttraffic.speakers">CTeSP RIA</span></div>
+                                    <div><i class="fas fa-calendar"></i> <span data-translate="highlights.date">1 de Julho</span></div>
+                                    <div><i class="fas fa-clock"></i> <span data-translate="highlights.smarttraffic.time">20:15</span></div>
+                                    <div><i class="fas fa-map-marker-alt"></i> <span data-translate="highlights.smarttraffic.room">Sala 9</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+            
+            <div class="view-program fade-in">
+                <a href="programa.html" class="btn btn-primary">
+                    <i class="fas fa-calendar-alt"></i> <span data-translate="highlights.viewProgram">Ver Programa</span>
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Dates Section -->
+    <section class="dates-section" id="datas">
+        <div class="container">
+            <div class="section-title fade-in">
+                <h2 data-translate="dates.title">Datas Importantes</h2>
+                <p data-translate="dates.subtitle">Marca na tua agenda e não percas os prazos</p>
+            </div>
+            
+            <div class="dates-grid">
+                <div class="date-card slide-in-left">
+                    <div class="date-icon">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
+                    <h3 data-translate="dates.abstract">Submissão de Resumos</h3>
+                    <p>23 de Maio</p>
+                </div>
+                
+                <div class="date-card fade-in">
+                    <div class="date-icon">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <h3 data-translate="dates.notification">Notificação de Aceitação</h3>
+                    <p>02 de Junho</p>
+                </div>
+                
+                <div class="date-card fade-in">
+                    <div class="date-icon">
+                        <i class="fas fa-file-upload"></i>
+                    </div>
+                    <h3 data-translate="dates.finalVersion">Versão Final</h3>
+                    <p>27 de Junho</p>
+                </div>
+                
+                <div class="date-card slide-in-right">
+                    <div class="date-icon">
+                        <i class="fas fa-user-plus"></i>
+                    </div>
+                    <h3 data-translate="dates.registration">Inscrição</h3>
+                    <p>até 30 de Junho</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Submissions Section -->
+    <section class="submissions-section" id="submissoes">
+        <div class="container">
+            <div class="section-title fade-in">
+                <h2 data-translate="submissions.title">Submissão de Artigos Científicos</h2>
+                <p data-translate="submissions.subtitle">Partilhe a sua investigação com a comunidade académica e profissional</p>
+            </div>
+            
+            <div class="submission-content">
+                <!-- Áreas Temáticas -->
+                <div class="submission-block">
+                    <h3 data-translate="submissions.thematicAreas.title">Áreas Temáticas</h3>
+                    <p data-translate="submissions.thematicAreas.description">Os artigos devem estar relacionados com uma das seguintes áreas:</p>
+                    <ul class="thematic-areas">
+                        <li><i class="fas fa-laptop-code"></i> <span data-translate="submissions.thematicAreas.areas.0">Arquitetura e desenvolvimento de software</span></li>
+                        <li><i class="fas fa-chart-line"></i> <span data-translate="submissions.thematicAreas.areas.1">Sistemas de apoio à decisão</span></li>
+                        <li><i class="fas fa-shield-alt"></i> <span data-translate="submissions.thematicAreas.areas.2">Cibersegurança e Segurança da Informação</span></li>
+                        <li><i class="fas fa-brain"></i> <span data-translate="submissions.thematicAreas.areas.3">Inteligência Artificial</span></li>
+                        <li><i class="fas fa-robot"></i> <span data-translate="submissions.thematicAreas.areas.4">Robótica e automação inteligente</span></li>
+                    </ul>
+                </div>
+
+                <!-- Requisitos -->
+                <div class="submission-block">
+                    <h3 data-translate="submissions.requirements.title">Requisitos de Submissão</h3>
+                    <ul class="requirements-list">
+                        <li>
+                            <span class="requirement-title" data-translate="submissions.requirements.items.0.title">Título</span>
+                            <span class="requirement-desc" data-translate="submissions.requirements.items.0.description">Título completo do artigo científico</span>
+                        </li>
+                        <li>
+                            <span class="requirement-title" data-translate="submissions.requirements.items.1.title">Resumo</span>
+                            <span class="requirement-desc" data-translate="submissions.requirements.items.1.description">Breve resumo do trabalho (máximo 300 palavras)</span>
+                        </li>
+                        <li>
+                            <span class="requirement-title" data-translate="submissions.requirements.items.2.title">Palavras-chave</span>
+                            <span class="requirement-desc" data-translate="submissions.requirements.items.2.description">3 a 5 palavras-chave que representem o conteúdo do artigo</span>
+                        </li>
+                        <li>
+                            <span class="requirement-title" data-translate="submissions.requirements.items.3.title">Autores</span>
+                            <span class="requirement-desc" data-translate="submissions.requirements.items.3.description">Nome completo e email de contacto de todos os autores</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Processo de Avaliação -->
+                <div class="submission-block">
+                    <h3 data-translate="submissions.evaluation.title">Processo de Avaliação</h3>
+                    <p id="evaluation-description"></p>
+                </div>
+
+                <!-- Como Submeter e Contato -->
+                <div class="submission-block">
+                    <h3 data-translate="submissions.submission.title">Como Submeter</h3>
+                    <p data-translate="submissions.submission.description">As submissões estão abertas para toda a comunidade do ISTEC e para participantes externos. Para submeteres o teu artigo, preenche o formulário abaixo:</p>
+                    
+                    <div class="text-center">
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSd8VcvIbAII_7IPru8BJBdglI13-ahNh6d1o15nmlxRJhuzSw/viewform" class="btn btn-primary" target="_blank">
+                            <i class="fas fa-file-upload"></i> <span data-translate="submissions.submission.button">Submeter Artigo</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer id="contacto">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3 data-translate="footer.title">JoTecA 2025</h3>
+                    <p data-translate="footer.subtitle">Jornadas de Tecnologia Avançada</p>
+                    <p data-translate="footer.motto">"Conectar, automatizar e proteger o futuro inteligente em movimento"</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/istec.porto/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.linkedin.com/school/istecp/?originalSubdomain=pt" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.instagram.com/istec.porto/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h3 data-translate="footer.quickLinks">Links Rápidos</h3>
+                    <ul>
+                        <li><a href="#topo"><i class="fas fa-chevron-right"></i> <span data-translate="footer.home">Início</span></a></li>
+                        <li><a href="#sobre"><i class="fas fa-chevron-right"></i> <span data-translate="nav.sobre">Sobre</span></a></li>
+                        <li><a href="#areas"><i class="fas fa-chevron-right"></i> <span data-translate="nav.areas">Áreas</span></a></li>
+                        <li><a href="#destaques"><i class="fas fa-chevron-right"></i> <span data-translate="nav.destaques">Destaques</span></a></li>
+                        <li><a href="#datas"><i class="fas fa-chevron-right"></i> <span data-translate="nav.datas">Datas</span></a></li>
+                        <li><a href="#submissoes"><i class="fas fa-chevron-right"></i> <span data-translate="nav.submissoes">Submissão</span></a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3 data-translate="footer.contacts">Contactos</h3>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span><a href="mailto:jornadas@my.isetc.pt">jornadas@my.isetc.pt</a></span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>225 193 220</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>ISTEC - Instituto Superior de Tecnologias Avançadas do Porto<br>Rua de Silva Tapada 115, 4200-501 Porto</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p data-translate="footer.copyright">© 2025 JoTecA - Jornadas de Tecnologia Avançada. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Scripts -->
+    <script src="assets/js/translations.js"></script>
+    <script src="assets/js/scripts.js"></script>
+    <script src="assets/js/chat.js"></script>
+
+    <!-- Chat Widget -->
+    <button id="chat-toggle"><i class="fas fa-comment-dots"></i></button>
+    <div id="chat-container">
+        <div id="chat-header">
+            <span data-translate="chat.title">Tecas – Assistente JoTecA</span>
+            <button id="chat-close"><i class="fas fa-times"></i></button>
+        </div>
+        <div id="chat-messages"></div>
+        <input id="chat-input" data-translate="chat.placeholder" placeholder="Escreve a tua mensagem..." />
+    </div>
+</body>
+</html>

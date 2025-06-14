@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title data-translate="title.programa">JoTecA 2025 | Programa</title>
+        
+        <!-- Favicon -->
+        <link rel="icon" type="image/png" href="assets/img/Ativo 1@4x_2.PNG">
+        
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+        
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        
+        <!-- Swiper CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+        
+        <!-- Three.js -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+        
+        <!-- Particles.js -->
+        <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+        
+        <!-- Swiper JS -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="assets/css/styles.css">
+        <link rel="stylesheet" href="assets/css/chat.css">
+    </head>
+<body class="programa-page">
+    <div id="particles-js"></div>
+    <div id="three-js"></div>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <a href="index.html" class="logo">
+                <img src="assets/img/Ativo 1@4x.png" alt="JoTecA 2025 Logo">
+            </a>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html#sobre" data-translate="nav.sobre">Sobre</a></li>
+                    <li><a href="index.html#areas" data-translate="nav.areas">Áreas</a></li>
+                    <li><a href="index.html#destaques" data-translate="nav.destaques">Destaques</a></li>
+                    <li><a href="index.html#datas" data-translate="nav.datas">Datas</a></li>
+                    <li><a href="index.html#submissoes" data-translate="nav.submissoes">Submissão</a></li>
+                    <li><a href="index.html#contacto" data-translate="nav.contacto">Contacto</a></li>
+                </ul>
+            </nav>
+            <button class="btn-language" id="languageToggle">
+                <i class="fas fa-globe"></i> <span>PT</span>
+            </button>
+            <button class="mobile-menu-btn" id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+
+    <!-- Programa Section -->
+    <section class="programa-section">
+        <div class="container">
+            <div class="section-title">
+                <h2 data-translate="program.title">Programa</h2>
+                <p data-translate="program.date">JoTecA 2025 - 1 de julho de 2025</p>
+                <p class="location"><i class="fas fa-map-marker-alt"></i> <span data-translate="program.location">ISTEC Porto</span></p>
+            </div>
+
+            <!-- Filtros -->
+            <div class="programa-filters">
+                <div class="search-box">
+                    <input type="text" id="programa-search" data-translate="program.filter.search" placeholder="Pesquisar por palestrante, tema ou sala...">
+                    <i class="fas fa-search"></i>
+                </div>
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all" data-translate="program.filter.all">Todos</button>
+                    <button class="filter-btn" data-filter="workshop" data-translate="program.filter.workshops">Workshops</button>
+                    <button class="filter-btn" data-filter="palestra" data-translate="program.filter.palestras">Palestras</button>
+                    <button class="filter-btn" data-filter="apresentacao" data-translate="program.filter.apresentacoes">Apresentações</button>
+                </div>
+                <div class="period-tabs">
+                    <button class="period-tab active" data-period="tarde" data-translate="program.filter.tarde">Tarde (14h30 - 17h45)</button>
+                    <button class="period-tab" data-period="noite" data-translate="program.filter.noite">Noite (18h15 - 21h30)</button>
+                </div>
+            </div>
+
+            <div class="programa-timeline">
+                <!-- Bloco 1 -->
+                <div class="programa-block periodo-tarde tipo-outro">
+                    <div class="time" data-translate="program.time.1">14h30 – 15h00</div>
+                    <div class="content">
+                        <h3 data-translate="program.block1.title"><i class="fas fa-building"></i> Recepção e Boas-Vindas</h3>
+                        <p class="location" data-translate="program.block1.location">Local: Átrio do ISTEC</p>
+                    </div>
+                </div>
+
+                <!-- Bloco 2 -->
+                <div class="programa-block periodo-tarde tipo-outro">
+                    <div class="time" data-translate="program.time.2">15h00 – 15h15</div>
+                    <div class="content">
+                        <h3 data-translate="program.block2.title"><i class="fas fa-microphone"></i> Abertura</h3>
+                        <p data-translate="program.block2.speaker">Pedro Poças</p>
+                        <p class="location" data-translate="program.block2.location">📍 Sala 7</p>
+                    </div>
+                </div>
+
+                <!-- Bloco 3 -->
+                <div class="programa-block periodo-tarde tipo-palestra tipo-apresentacao">
+                    <div class="time" data-translate="program.time.3">15h15 – 15h45</div>
+                    <div class="content">
+                        <div class="programa-session tipo-palestra">
+                            <h3 data-translate="program.block3.session1.title"><i class="fas fa-brain"></i> Metodologias Ágeis para Desenvolvimento de Software</h3>
+                            <div class="oradores-list">
+                                <span class="oradores-label" data-translate="program.speakers">Oradores:</span>
+                                <div class="orador">
+                                    <div class="orador-foto-container">
+                                        <img src="assets/img/oradores/AntonioTojal.png" alt="António Tojal" class="orador-foto">
+                                    </div>
+                                    António Tojal (Blip)
+                                </div>
+                                <div class="orador">
+                                    <div class="orador-foto-container">
+                                        <img src="assets/img/oradores/AnaAzevedo.jpeg" alt="Ana Azevedo" class="orador-foto">
+                                    </div>
+                                    Ana Azevedo (ISTEC)
+                                </div>
+                            </div>
+                            <p class="location" data-translate="program.block3.session1.location">📍 Sala 7</p>
+                        </div>
+                        <div class="programa-session tipo-apresentacao">
+                            <h3 data-translate="program.block3.session2.title"><i class="fas fa-book"></i> Apresentação de Artigos – Sessão 01</h3>
+                            <p data-translate="program.block3.session2.chair">Chair: Zaferis Kokkinogenis (ISTEC)</p>
+                            <p class="location" data-translate="program.block3.session2.location">📍 Sala 6</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bloco 4 -->
+                <div class="programa-block periodo-tarde tipo-outro">
+                    <div class="time" data-translate="program.time.4">15h45 – 16h15</div>
+                    <div class="content">
+                        <h3 data-translate="program.block4.title"><i class="fas fa-coffee"></i> Coffee-break</h3>
+                        <p class="location" data-translate="program.block4.location">Local: Bar</p>
+                    </div>
+                </div>
+
+                <!-- Bloco 5 -->
+                <div class="programa-block periodo-tarde tipo-palestra tipo-apresentacao">
+                    <div class="time" data-translate="program.time.5">16h15 – 17h00</div>
+                    <div class="content">
+                        <div class="programa-session tipo-palestra">
+                            <h3 data-translate="program.block5.session1.title"><i class="fas fa-lightbulb"></i> Inovações Tecnológicas na Saúde</h3>
+                            <div class="oradores-list">
+                                <span class="oradores-label" data-translate="program.speakers">Oradores:</span>
+                                <div class="orador">
+                                    <div class="orador-foto-container">
+                                        <img src="assets/img/oradores/RitaSousa.jpeg" alt="Rita Sousa" class="orador-foto">
+                                    </div>
+                                    Rita Sousa (Sword Health)
+                                </div>
+                                <div class="orador">
+                                    <div class="orador-foto-container">
+                                        <img src="assets/img/oradores/DianaCardoso.jpeg" alt="Diana Cardoso" class="orador-foto">
+                                    </div>
+                                    Diana Cardoso (FEUP)
+                                </div>
+                                <div class="orador">
+                                    <div class="orador-foto-container">
+                                        <img src="assets/img/oradores/RicardoFreixo.jpg" alt="Ricardo Freixo" class="orador-foto">
+                                    </div>
+                                    Ricardo Freixo (Prológica - Glintt)
+                                </div>
+                                <div class="orador">
+                                    <div class="orador-foto-container">
+                                        <img src="assets/img/oradores/JaimePeralta.jpeg" alt="Jaime Peralta" class="orador-foto">
+                                    </div>
+                                    Jaime Peralta (MECEI)
+                                </div>
+                            </div>
+                            <div class="oradores-list">
+                                <span class="oradores-label" data-translate="program.moderadora">Moderadora:</span>
+                                <div class="orador">
+                                    <div class="orador-foto-container">
+                                        <img src="assets/img/oradores/MariliaBaptista.jpg" alt="Marília Baptista" class="orador-foto">
+                                    </div>
+                                    Marília Baptista (ISEP)
+                                </div>
+                            </div>
+                            <p class="location" data-translate="program.block5.session1.location">📍 Sala 7</p>
+                        </div>
+                        <div class="programa-session tipo-palestra">
+                            <h3 data-translate="program.block5.session2.title"><i class="fas fa-cogs"></i> Potencializar Soluções com Power Platform e LowCode</h3>
+                            <div class="oradores-list">
+                                <span class="oradores-label" data-translate="program.speakers">Oradores:</span>
+                                <div class="orador">
+                                    <div class="orador-foto-container">
+                                        <img src="assets/img/oradores/GoncaloNogueira.jpg" alt="Gonçalo Nogueira" class="orador-foto">
+                                    </div>
+                                    Gonçalo Nogueira (ISTEC)
+                                </div>
+                                <div class="orador">
+                                    <div class="orador-foto-container">
+                                        <img src="assets/img/oradores/RicardoCalejo.jpeg" alt="Ricardo Calejo" class="orador-foto">
+                                    </div>
+                                    Ricardo Calejo (Microsoft)
+                                </div>
+                            </div>
+                            <div class="oradores-list">
+                                <span class="oradores-label" data-translate="program.moderator">Moderador:</span>
+                                <div class="orador">
+                                    <div class="orador-foto-container">
+                                        <img src="assets/img/oradores/VitorSantos.jpg" alt="Vítor Santos" class="orador-foto">
+                                    </div>
+                                    Vítor Santos (ISTEC)
+                                </div>
+                            </div>
+                            <p class="location" data-translate="program.block5.session2.location">📍 Sala 6</p>
+                        </div>
+                        <div class="programa-session tipo-apresentacao">
+                            <h3 data-translate="program.block5.session3.title"><i class="fas fa-book"></i> Apresentação de Artigos – Sessão 02</h3>
+                            <div class="oradores-list">
+                                <span class="oradores-label">Chair:</span>
+                                <div class="orador">
+                                    <div class="orador-foto-container">
+                                        <img src="assets/img/oradores/RicardoQueiros.jpg" alt="Ricardo Queirós" class="orador-foto">
+                                    </div>
+                                    Ricardo Queirós (ISTEC)
+                                </div>
+                            </div>
+                            <p class="location" data-translate="program.block5.session3.location">📍 Sala 5</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bloco 6 -->
+                <div class="programa-block periodo-tarde tipo-workshop tipo-apresentacao">
+                    <div class="time" data-translate="program.time.6">17h00 – 17h45</div>
+                    <div class="content">
+                        <div class="programa-session tipo-workshop">
+                            <h3 data-translate="program.block6.session1.title"><i class="fas fa-robot"></i> Think. Sync. Control. - Oficina de Inteligência Artificial - CTeSP RIA</h3>
+                            <p class="location" data-translate="program.block6.session1.location">📍 Sala 8</p>
+                        </div>
+                        <div class="programa-session tipo-workshop">
+                            <h3 data-translate="program.block6.session2.title"><i class="fas fa-robot"></i> Hey Casa! - Oficina de Automação - CTeSP RIA</h3>
+                            <p class="location" data-translate="program.block6.session2.location">📍 Sala 9</p>
+                        </div>
+                        <div class="programa-session tipo-apresentacao">
+                            <h3 data-translate="program.block6.session3.title"><i class="fas fa-image"></i> Apresentação de Posters – Sessão 01</h3>
+                            <div class="oradores-list">
+                                <span class="oradores-label" data-translate="program.jury">Júri:</span>
+                                <div class="orador">
+                                    <div class="orador-foto-container">
+                                        <img src="assets/img/oradores/Marcia.jpeg" alt="Márcia Barreto" class="orador-foto">
+                                    </div>
+                                    Márcia Barreto (ISTEC)
+                                </div>
+                                <div class="orador">
+                                    <div class="orador-foto-container">
+                                        <img src="assets/img/oradores/MarioAmorim.png" alt="Mário Amorim" class="orador-foto">
+                                    </div>
+                                    Mário Amorim (ISTEC)
+                                </div>
+                                <div class="orador">
+                                    Isabel Bóia (ISTEC)
+                                </div>
+                            </div>
+                            <p class="location" data-translate="program.block6.session3.location">📍 Sala 10</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bloco 7 -->
+                <div class="programa-block periodo-noite tipo-outro">
+                    <div class="time" data-translate="program.time.7">18h15 – 18h30</div>
+                    <div class="content">
+                        <h3 data-translate="program.block7.title"><i class="fas fa-microphone"></i> Abertura da 2ª Parte</h3>
+                        <p data-translate="program.block7.speaker">Vânia Monteiro</p>
+                        <p class="location" data-translate="program.block7.location">📍 Sala 7</p>
+                    </div>
+                </div>
+
+                <!-- Bloco 8 -->
+                <div class="programa-block periodo-noite tipo-palestra tipo-apresentacao">
+                    <div class="time" data-translate="program.time.8">18h30 – 19h00</div>
+                    <div class="content">
+                        <div class="programa-session tipo-palestra">
+                            <h3 data-translate="program.block8.session1.title"><i class="fas fa-brain"></i> Profissões do Futuro com a Inteligência Artificial</h3>
+                            <div class="oradores-list">
+                                <span class="oradores-label" data-translate="program.speakers">Oradores:</span>
+                                <div class="orador">
+                                    <div class="orador-foto-container">
+                                        <img src="assets/img/oradores/sergionogueira.jpeg" alt="Sérgio Nogueira" class="orador-foto">
+                                    </div>
+                                    Sérgio Nogueira (Critical Techworks)
+                                </div>
+                                <div class="orador">
+                                    <div class="orador-foto-container">
+                                        <img src="assets/img/oradores/HelderPinto.jpg" alt="Helder Pinto" class="orador-foto">
+                                    </div>
+                                    Helder Pinto (ISTEC)
+                                </div>
+                            </div>
+                            <p class="location" data-translate="program.block8.session1.location">📍 Sala 7</p>
+                        </div>
+                        <div class="programa-session tipo-apresentacao">
+                            <h3 data-translate="program.block8.session2.title"><i class="fas fa-book"></i> Apresentação de Artigos – Sessão 03</h3>
+                            <p data-translate="program.block8.session2.chair">Chair: João Rebelo (ISTEC)</p>
+                            <p class="location" data-translate="program.block8.session2.location">📍 Sala 6</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bloco 9 -->
+                <div class="programa-block periodo-noite tipo-palestra tipo-apresentacao">
+                    <div class="time" data-translate="program.time.9">19h00 – 19h45</div>
+                    <div class="content">
+                        <div class="programa-session tipo-palestra">
+                            <h3 data-translate="program.block9.session1.title"><i class="fas fa-shield-alt"></i> Navegar no Labirinto do Cibercrime</h3>
+                            <div class="oradores-list">
+                                <span class="oradores-label" data-translate="program.speakers">Oradores:</span>
+                                <div class="orador">
+                                    <div class="orador-foto-container">
+                                        <img src="assets/img/oradores/NunoOliveira.jpg" alt="Nuno Oliveira" class="orador-foto">
+                                    </div>
+                                    Nuno Oliveira (Fedex)
+                                </div>
+                                <div class="orador">
+                                    <div class="orador-foto-container">
+                                        <img src="assets/img/oradores/NunoFonseca.jpeg" alt="Nuno Fonseca" class="orador-foto">
+                                    </div>
+                                    Nuno Fonseca (ISEP)
+                                </div>
+                                <div class="orador">
+                                    <div class="orador-foto-container">
+                                        <img src="assets/img/oradores/GoncaloLeite.jpeg" alt="Gonçalo Leite" class="orador-foto">
+                                    </div>
+                                    Gonçalo Leite (CESAE Digital)
+                                </div>
+                            </div>
+                            <div class="oradores-list">
+                                <span class="oradores-label" data-translate="program.moderator">Moderador:</span>
+                                <div class="orador">
+                                    <div class="orador-foto-container">
+                                        <img src="assets/img/oradores/HugoFerreira.jpeg" alt="Hugo Ferreira" class="orador-foto">
+                                    </div>
+                                    Hugo Ferreira (ISTEC)
+                                </div>
+                            </div>
+                            <p class="location" data-translate="program.block9.session1.location">📍 Sala 7</p>
+                        </div>
+                        <div class="programa-session tipo-palestra">
+                            <h3 data-translate="program.block9.session2.title"><i class="fas fa-globe"></i> Transformação Digital</h3>
+                            <div class="oradores-list">
+                                <span class="oradores-label" data-translate="program.speakers">Oradores:</span>
+                                <div class="orador">
+                                    <div class="orador-foto-container">
+                                        <img src="assets/img/oradores/AnaCanavarro.jpeg" alt="Ana Canavarro" class="orador-foto">
+                                    </div>
+                                    Ana Canavarro (IPAM)
+                                </div>
+                                <div class="orador">
+                                    <div class="orador-foto-container">
+                                        <img src="assets/img/oradores/AndreVala.png" alt="André Vala" class="orador-foto">
+                                    </div>
+                                    André Vala (Microsoft)
+                                </div>
+                                <div class="orador">
+                                    <div class="orador-foto-container">
+                                        <img src="assets/img/oradores/IsabelMadalena.png" alt="Isabel Madalena" class="orador-foto">
+                                    </div>
+                                    Isabel Madalena (ISTEC)
+                                </div>
+                                <div class="orador">
+                                    <div class="orador-foto-container">
+                                        <img src="assets/img/oradores/AngeloValente.jpeg" alt="Ângelo Valente" class="orador-foto">
+                                    </div>
+                                    Ângelo Valente (Fedex)
+                                </div>
+                            </div>
+                            <div class="oradores-list">
+                                <span class="oradores-label" data-translate="program.moderadora">Moderadora:</span>
+                                <div class="orador">
+                                    <div class="orador-foto-container">
+                                        <img src="assets/img/oradores/JoanaMacedo.jpeg" alt="Joana Macedo" class="orador-foto">
+                                    </div>
+                                    Joana Macedo (ISTEC)
+                                </div>
+                            </div>
+                            <p class="location" data-translate="program.block9.session2.location">📍 Sala 6</p>
+                        </div>
+                        <div class="programa-session tipo-apresentacao">
+                            <h3 data-translate="program.block9.session3.title"><i class="fas fa-book"></i> Apresentação de Artigos – Sessão 04</h3>
+                            <p data-translate="program.block9.session3.chair">Chair: Gonçalo Medeiros (ISTEC)</p>
+                            <p class="location" data-translate="program.block9.session3.location">📍 Sala 5</p>
+                        </div>
+                        <div class="programa-session tipo-apresentacao">
+                            <h3 data-translate="program.block9.session4.title"><i class="fas fa-image"></i> Apresentação de Posters – Sessão 02</h3>
+                            <div class="oradores-list">
+                                <span class="oradores-label" data-translate="program.jury">Júri:</span>
+                                <div class="orador">
+                                    <div class="orador-foto-container">
+                                        <img src="assets/img/oradores/RicardoQueiros.jpg" alt="Ricardo Queirós" class="orador-foto">
+                                    </div>
+                                    Ricardo Queirós (ISTEC)
+                                </div>
+                                <div class="orador">
+                                    Elisa Simões (ISTEC)
+                                </div>
+                                <div class="orador">
+                                    Marta Sá (ISTEC)
+                                </div>
+                            </div>
+                            <p class="location" data-translate="program.block9.session4.location">📍 Sala 10</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bloco 10 -->
+                <div class="programa-block periodo-noite tipo-outro">
+                    <div class="time" data-translate="program.time.10">19h45 – 20h15</div>
+                    <div class="content">
+                        <h3 data-translate="program.block10.title"><i class="fas fa-coffee"></i> Coffee-break</h3>
+                        <p class="location" data-translate="program.block10.location">Local: Bar</p>
+                    </div>
+                </div>
+
+                <!-- Bloco 11 -->
+                <div class="programa-block periodo-noite tipo-workshop">
+                    <div class="time" data-translate="program.time.11">20h15 – 21h00</div>
+                    <div class="content">
+                        <div class="programa-session tipo-workshop">
+                            <h3 data-translate="program.block11.session1.title"><i class="fas fa-robot"></i> CyberStrike: Oficina de Cibersegurança - CTeSP RIA</h3>
+                            <p class="location" data-translate="program.block11.session1.location">📍 Sala 8</p>
+                        </div>
+                        <div class="programa-session tipo-workshop">
+                            <h3 data-translate="program.block11.session2.title"><i class="fas fa-robot"></i> SmartTraffic - Oficina de Automação e Robótica - CTeSP RIA</h3>
+                            <p class="location" data-translate="program.block11.session2.location">📍 Sala 9</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bloco 12 -->
+                <div class="programa-block periodo-noite tipo-outro">
+                    <div class="time" data-translate="program.time.12">21h00 – 21h30</div>
+                    <div class="content">
+                        <h3 data-translate="program.block12.title"><i class="fas fa-trophy"></i> Entrega de Prémios e Encerramento</h3>
+                        <div class="oradores-list">
+                            <span class="oradores-label">Oradora:</span>
+                            <div class="orador">
+                                <div class="orador-foto-container">
+                                    <img src="assets/img/oradores/IsabelFidalgo.jpg" alt="Isabel Fidalgo" class="orador-foto">
+                                </div>
+                                Isabel Fidalgo
+                            </div>
+                        </div>
+                        <p class="location" data-translate="program.block12.location">📍 Sala 7</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contacto">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3 data-translate="footer.title">JoTecA 2025</h3>
+                    <p data-translate="footer.subtitle">Jornadas de Tecnologia Avançada</p>
+                    <p data-translate="footer.motto">"Conectar, automatizar e proteger o futuro inteligente em movimento"</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/istec.porto/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.linkedin.com/school/istecp/?originalSubdomain=pt" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.instagram.com/istec.porto/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h3 data-translate="footer.quickLinks">Links Rápidos</h3>
+                    <ul>
+                        <li><a href="index.html"><i class="fas fa-chevron-right"></i> <span data-translate="footer.home">Início</span></a></li>
+                        <li><a href="index.html#sobre"><i class="fas fa-chevron-right"></i> <span data-translate="nav.sobre">Sobre</span></a></li>
+                        <li><a href="index.html#areas"><i class="fas fa-chevron-right"></i> <span data-translate="nav.areas">Áreas</span></a></li>
+                        <li><a href="index.html#destaques"><i class="fas fa-chevron-right"></i> <span data-translate="nav.destaques">Destaques</span></a></li>
+                        <li><a href="index.html#datas"><i class="fas fa-chevron-right"></i> <span data-translate="nav.datas">Datas</span></a></li>
+                        <li><a href="index.html#submissoes"><i class="fas fa-chevron-right"></i> <span data-translate="nav.submissoes">Submissão</span></a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3 data-translate="footer.contacts">Contactos</h3>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span><a href="mailto:jornadas@my.isetc.pt">jornadas@my.isetc.pt</a></span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>225 193 220</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>ISTEC - Instituto Superior de Tecnologias Avançadas do Porto<br>Rua de Silva Tapada 115, 4200-501 Porto</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p data-translate="footer.copyright">© 2025 JoTecA - Jornadas de Tecnologia Avançada. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Scripts -->
+    <script src="assets/js/translations.js"></script>
+    <script src="assets/js/scripts.js"></script>
+    <script src="assets/js/chat.js"></script>
+
+    <!-- Chat Widget -->
+    <button id="chat-toggle"><i class="fas fa-comment-dots"></i></button>
+    <div id="chat-container">
+        <div id="chat-header">
+            <span data-translate="chat.title">Tecas – Assistente JoTecA</span>
+            <button id="chat-close"><i class="fas fa-times"></i></button>
+        </div>
+        <div id="chat-messages"></div>
+        <input id="chat-input" data-translate="chat.placeholder" placeholder="Escreve a tua mensagem..." />
+    </div>
+</body>
+</html>
