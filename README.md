@@ -1,6 +1,6 @@
-# JoTecA 2025 - Página de Aterragem
+# JoTecA 2025
 
-Página de aterragem moderna e responsiva para as Jornadas de Tecnologia Avançada 2025 do ISTEC - Instituto Superior de Tecnologias Avançadas do Porto.
+Página moderna e responsiva para as Jornadas de Tecnologia Avançada 2025 do ISTEC - Instituto Superior de Tecnologias Avançadas do Porto.
 
 ## Características
 
